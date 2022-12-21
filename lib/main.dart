@@ -44,7 +44,6 @@ class _HomeState extends State<Home> {
             ),
             onPressed: () async{
              final result=await Navigator.push(context, MaterialPageRoute(builder: (context)=>Secondpage()));
-             print(result);
              setState((){
                if(result.toString().substring(0,23)=="Date is not mentioned  "){
                  title_name="Date is not mentioned";
